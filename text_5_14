@@ -1,0 +1,43 @@
+//5.14
+//习题1，计算ASCII码   转换以下ASCII为对应字符并输出他们   14  12 25 26 30 
+//int main()
+//{
+//	int arr[] = { 14,12,25,26,30 };
+//	int i = 0;
+//	//sizeof(arr)计算的是数组的总大小，单位是字节
+//	//sizeof(arr[0])计算的是第一个数
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	while (i < sz)
+//	{
+//		printf("%c",arr[i]);
+//		i++;
+//	}
+//	return 0;
+//}
+
+//例二 输出年月日 如果输入月为一位 需要在前面补一个零， （printf时用0%补全）
+//int main()
+//{
+//	int year = 0;
+//	int month = 0;
+//	int date = 0;
+//	scanf_s("%4d%2d%2d", &year, &month, &date);
+//	printf("year=%d\n", year);
+//	printf("month=%02d\n", month); //如果像输入2025年二月三日 记得加空格 即2025 2 3
+//	printf("data=%02d\n", date);
+//	return 0;
+//}
+//for 循环
+// for(初始化部分;条件判断部分;调整部分）
+int main()
+{
+	int i = 0;
+	for (i = 1; i <= 10; i++)
+	{
+		if (5 == i)
+		////break;     //1234
+		continue;   //123467891011
+		printf("%d\n", i);
+	}
+	return 0;
+}
