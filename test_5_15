@@ -1,0 +1,100 @@
+
+//5_15 for循环的嵌入
+//int main()
+//{
+//	int i = 0;
+//	int j = 0;
+//	for (i = 0; i < 10; i++)
+//	{
+//		for (j = 0; j < 10; j++)
+//		{
+//			printf("hehe\n"); 
+//		}
+//	}
+//	return 0;
+//}
+
+//int main()
+//{
+//	int i = 0;
+//	int j = 0;
+//	for (; i < 10; i++)
+//	{
+//		for (; j < 10; j++)
+//		{
+//			printf("hehe\n");  //打印十个 因为省略了 所以只有第二个循环，到第一个的时候就跳过了
+//		}
+//	}
+//	return 0;
+//}
+//
+
+////do
+//(循环语句)
+//while
+//（表达式）
+//int main()
+//{
+//	int i = 0;
+//	do
+//	{
+//		i++;
+//		if (5 == i)
+//			//break;//1234
+//			continue;//1-11 no5
+//		printf("%d\n", i);
+//		
+//	} while (i <= 10);
+//		
+//	return 0;
+//}
+
+//求阶乘 1*2*3*n
+//int main()
+//{
+//	int i = 0;
+//	int n = 1;
+//	int ret = 1;
+//	scanf_s("%d", &n);
+//	for (i = 0; i <= n;i++)
+//	{
+//		ret = ret * i;
+//		//printf("%d\n", ret); 不能方括号里面，在里面每循环一次打印一次，在外面循环玩才打印
+//	}
+//	printf("%d\n", ret);
+//	return 0;
+//}
+ //求1！+2！+3！
+//int main()
+//{
+//	int i = 1;
+//	int n = 0;
+//	int ret = 1; //阶乘
+//	int sum = 0;//求和
+//	for (n = 1; n <= 3; n++)
+//	{
+//		for (i = 1; i <= n; i++) //n=1,i=1 ret =1*1=1 sum=1
+//			//n=2 i=2 ret=1*2 sum=1+2
+//		{
+//			ret = ret * i;
+//		}
+//		sum = sum + ret;
+//	}
+//	printf("%d\n", sum);
+//	return 0;
+//}
+int main()
+{
+	//int i = 1;
+	int n = 0;
+	int ret = 1; //阶乘
+	int sum = 0;//求和
+	for (n = 1; n <= 3; n++)
+	{
+		
+			ret = ret * n;
+		    sum = sum + ret;
+	}
+	printf("%d\n", sum);
+	return 0;
+}
