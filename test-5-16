@@ -1,0 +1,18 @@
+int main()
+{
+	int arr[] = { 1,2,3,4,5,6,7,8,9 };
+	int k = 7;
+	int i = 0;
+	int sz = sizeof(arr) / sizeof(arr[i]);
+	for (i = 0; i <= sz; i++)
+	{
+		if (arr[i] == k)
+		{
+			printf("%d\n", i);
+			break;
+		}
+	}
+	if (arr[i] == sz)
+		printf("超过范围了\n");
+	return 0;
+}
