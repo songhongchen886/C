@@ -1,0 +1,30 @@
+class Solution {
+public:
+    int search(vector<int>& nums, int target) {
+        int last=nums.back();
+        int left=-1,right=nums.size()-1;
+        while(left+1<right)
+        {
+            int mid=left+(right-left)/2;
+            int x=nums[mid];
+            if(x>last&&target<=last)
+            {
+                left=mid;
+            }
+            else if(target>last&&x<=last)
+            {
+                right=mid;
+            }
+            else if(x<target)
+            {
+                left=mid;
+            }
+            else
+            {
+                right=mid;
+            }
+        }
+        if(nums[right]!=target)return -1;
+        return right;
+    }
+};
